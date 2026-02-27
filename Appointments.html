@@ -80,7 +80,7 @@
 
 <h2>BOOK AN APPOINTMENT</h2>
 
-<form action="mailto:youremail@example.com" method="post" 
+<form>
   <div class="mb-3">
     <label for="firstname" class="form-label">First Name:</label>
     <input type="text" id="firstname" name="First Name" class="form-control" style="width: 30%;" required>
@@ -93,7 +93,7 @@
 
   <div class="mb-3">
     <label for="email" class="form-label">Email:</label>
-    <input type="email" id="email" name="Email" class="form-control" style="width: 30%;"> required>
+    <input type="email" id="email" name="Email" class="form-control" style="width: 30%;" required>
   </div>
 
   <div class="mb-3">
@@ -101,33 +101,39 @@
     <input type="tel" id="tel" name="Phone" class="form-control" style="width: 30%;" required>
   </div>
 
-  <div class="mb-3">
-    <label for="speciality" class="form-label">Doctor Speciality:</label>
-    <input type="text" id="speciality" name="Doctor Speciality" class="form-control" style="width: 30%;" required>
-     <select id="doctor speciality" name="Doctor speciality" class="form-control" required>
-    <option value="disabled selected">Select doctor speciality</option>
-    <option>Family Phycisian</option>
+ <div class="mb-3">
+  <label for="speciality" class="form-label">Doctor Speciality:</label>
+  
+  <select id="speciality" name="Doctor Speciality" 
+          class="form-control" style="width: 30%;" required>
+    
+    <option value="" disabled selected>Select doctor speciality</option>
+    <option>Family Physician</option>
     <option>Physiotherapist</option>
     <option>Pathologist</option>
     <option>Dermatologist</option>
     <option>Gynaecologist</option>
     <option>General Practitioner</option>
+  
   </select>
-  </div>
+</div>
 
-  <div class="mb-3">
-    <label for="doctor" class="form-label">Name of Doctor:</label>
-    <input type="text" id="doctor" name="Doctor Name" class="form-control" style="width: 30%;" required>
-    <select id="doctor" name="Doctor Name" class="form-control" required>
-    <option value="disabled selected">Select a doctor</option>
+ <div class="mb-3">
+  <label for="doctorname" class="form-label">Name of Doctor:</label>
+  
+  <select id="doctorname" name="Doctor Name" 
+          class="form-control" style="width: 30%;" required>
+    
+    <option value="" disabled selected>Select a doctor</option>
     <option>Dr. Teto Ryan</option>
     <option>Dr. Moabi Warona</option>
     <option>Dr. Dua Dua</option>
     <option>Dr. Mairelys Gonzalez</option>
     <option>Dr Cameroon Cameroon</option>
     <option>Dr Hudson Onyango</option>
+  
   </select>
-  </div>
+</div>
 
   <div class="mb-3">
     <label for="datetime" class="form-label">Appointment Date & Time:</label>
