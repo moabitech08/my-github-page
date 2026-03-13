@@ -131,3 +131,7 @@ font-weight: bold;
    object-fit: cover;
    margin-bottom: 15px;
 }
+/* Smooth hover transition for navigation links */
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+}
