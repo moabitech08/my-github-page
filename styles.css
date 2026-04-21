@@ -1,137 +1,43 @@
 body {
-    background-color: aliceblue;
-    background-image: url("black.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+    background-color: #364049; /* cleaner hospital look */
+    background-image: url(black.jpg);
     font-family: Arial, sans-serif;
-color: #fafafa; 
-
     margin: 0;
-
-padding: 0;
-
-line-height: 1.6;
-
-
+    padding: 0;
+    line-height: 1.6;
 }
-header {
-
-background-color: #007BFF;
-
-color: white;
-
-padding: 20px;
-
-text-align: center;
-
+.navbar-nav .nav-link {
+    transition: 0.3s;
 }
-
-
-header h1 {
-
-margin: 0;
-
-}
-
-
-nav a {
-
-color: white;
-
-text-decoration: none;
-
-margin: 0 10px;
-
-}
-
-
-nav a:hover {
-color: #ffc107;
-text-decoration: underline;
-
-}
-main {
-
-padding: 20px;
-
-max-width: 800px;
-
-margin: 0 auto;
-
-}
-
-
-main img {
-
-max-width: 100%;
-
-height: auto;
-
-display: block;
-
-margin: 20px 0;
-
-}
-footer {
-
-background-color:#0056b3;
-color: white;
-
-text-align: center;
-
-padding: 10px;
-
-position: fixed;
-
-bottom: 0;
-
-width: 100%;
-
-}
-p {
-
-font-size: 1.1em;
-
-}
-
-
-a {
-
-color: #007BFF;
-
-text-decoration: none;
-
-}
-
-
-a:hover {
-
-text-decoration: underline;
-
-}
-img {
-
-border: 5px solid #af4c4c;
-
-border-radius: 10px;
-
-}
-main a[href^="mailto:"] {
-
-color: #ff4500;
-
-font-weight: bold;
-
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
 }
 .doctor-img {
-   width: 150px;
-   height: 150px;
-   object-fit: cover;
-   margin-bottom: 15px;
+    height: 250px;
+    object-fit: cover;
 }
-/* Smooth hover transition for navigation links */
-.navbar-nav .nav-link {
-    transition: all 0.3s ease;
+.card {
+    background-color: rgba(60, 63, 65, 0.9); /* dark glass look */
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    background-color: rgb(149, 149, 149);
+}
+img {
+    border: none;
+    border-radius: 0;
+}
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: bottom;
+    padding: 15px;
+    position: relative; /* FIXED */
+}
+p {
+    font-size: 1em;
 }

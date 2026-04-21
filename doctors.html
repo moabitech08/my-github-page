@@ -1,93 +1,139 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Meet Our Doctors</title>
-<!-- Bootstrap CSS -->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
 <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <!-- Your content goes here -->
 
-
-<!-- Bootstrap JS and dependencies -->
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
+<!-- NAVBAR -->
 <header>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
 <div class="container">
-
 <a class="navbar-brand" href="index.html">Unity Health Hospital</a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-
 <span class="navbar-toggler-icon"></span>
-
 </button>
 
 <div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="navbar-nav">
-
-<li class="nav-item">
-
-<a class="nav-link" href="index.html">Home</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="about.html">About</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="contact.html">Contact</a>
-
-</li>
-  <li class="nav-item">
-    <a class="nav-link" href="appointments.html">Appointments</a>
-  </li>
-   <li class="nav-item">
- <a class="nav-link" href="table.html">Doctors Schedule</a>
-  </li>
- <li class="nav-item">
-    <a class="nav-link" href="doctors.html">Our Doctors</a>
- </li>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+<li class="nav-item"><a class="nav-link" href="table.html">Doctors Schedule</a></li>
+<li class="nav-item"><a class="nav-link active" href="doctors.html">Our Doctors</a></li>
 </ul>
-
 </div>
-
 </div>
-
 </nav>
-
 </header>
 
-<footer>
+<!-- HERO SECTION -->
+<section class="light text-center py-5">
+<div class="container">
+<h1 class="fw-bold">Our Medical Specialists</h1>
+<p class="text-muted">Experienced doctors dedicated to your health and well-being</p>
+</div>
+</section>
 
-<p>&copy; 2026 Unity Health Hospital</p>
+<section class="container my-5">
+<div class="row g-4">
 
+<!-- Doctor Card -->
+<div class="col-md-4 d-flex">
+
+<div class="card shadow-sm w-100 h-100">
+<img src="doctor 1" class="card-img-top doctor-img" alt="Doctor">
+<div class="card-body text-center d-flex flex-column">
+<h5 class="card-title">Dr. Teto Ryan</h5>
+<p class="text-primary">Cardiologist</p>
+<p class="card-text small">Expert in heart conditions and cardiovascular health.</p>
+<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 d-flex">
+
+<div class="card shadow-sm w-100 h-100">
+<img src="doctor 2(1).jpg" class="card-img-top doctor-img" alt="Doctor">
+<div class="card-body text-center d-flex flex-column">
+<h5 class="card-title">Dr. Moabi Warona</h5>
+<p class="text-primary">Pediatrician</p>
+<p class="card-text small">Providing quality healthcare for children.</p>
+<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 d-flex">
+
+<div class="card shadow-sm w-100 h-100">
+<img src="doctor 3" class="card-img-top doctor-img" alt="Doctor">
+<div class="card-body text-center d-flex flex-column">
+<h5 class="card-title">Dr. Dua Dua</h5>
+<p class="text-primary">Dermatologist</p>
+<p class="card-text small">Specialist in skin care and treatment.</p>
+<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 d-flex">
+
+<div class="card shadow-sm w-100 h-100">
+<img src="doctor 4.jpg" class="card-img-top doctor-img" alt="Doctor">
+<div class="card-body text-center d-flex flex-column">
+<h5 class="card-title">Dr. Louis Louis</h5>
+<p class="text-primary">Cardiologist</p>
+<p class="card-text small">Focused on heart disease prevention.</p>
+<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4 d-flex">
+
+<div class="card shadow-sm w-100 h-100">
+<img src="Dr-ME-Tsekeli.webp" class="card-img-top doctor-img" alt="Doctor">
+<div class="card-body text-center d-flex flex-column">
+<h5 class="card-title">Dr. Katty Karren</h5>
+<p class="text-primary">Pediatrician</p>
+<p class="card-text small">Child health and development expert.</p>
+<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="bg-primary text-white text-center py-5">
+<h3>Need Medical Assistance?</h3>
+<p>Book an appointment with our professionals today.</p>
+<a href="appointments.html" class="btn btn-light">Book Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+<p>&copy; 2026 Unity Health Hospital | All Rights Reserved</p>
 </footer>
 
-</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
+</body>
 </html>
